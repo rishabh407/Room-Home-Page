@@ -43,17 +43,17 @@
    let ismenu=false;
    hamburger.addEventListener("click",()=>{
     ismenu=!ismenu;   
-    const removename=ismenu?room.classList.add("hide"):room.classList.remove("hide");
+    let removename=ismenu?room.classList.add("hide"):room.classList.remove("hide");
 
-   const removelinks=ismenu?links.classList.remove("hide"):links.classList.add("hide");
+   let removelinks=ismenu?links.classList.remove("hide"):links.classList.add("hide");
    
-   const hamburgericon=ismenu?hamburger.src="images/icon-close.svg":hamburger.src="images/icon-hamburger.svg";  
+   let hamburgericon=ismenu?hamburger.src="images/icon-close.svg":hamburger.src="images/icon-hamburger.svg";  
    
-   const changelinkscolor=ismenu?alllinks.forEach((link)=>{
+   let changelinkscolor=ismenu?alllinks.forEach((link)=>{
         link.style.color="black";
    }):alllinks.forEach((link)=>{
         link.style.color="white";
    });
-   const contbackground=ismenu?cont1.style.backgroundColor="white":cont1.style.backgroundColor="transparent";
-   const blackportion=ismenu?black.classList.remove("hide"):black.classList.add("hide");
+   let contbackground=ismenu?cont1.style.backgroundColor="white":cont1.style.backgroundColor="transparent";
+   let blackportion=ismenu?black.classList.remove("hide"):black.classList.add("hide");
   });
