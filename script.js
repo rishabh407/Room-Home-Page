@@ -39,7 +39,6 @@
    const links=document.querySelector(".links");
   const alllinks=document.querySelectorAll(".links ul li");
    const cont1=document.querySelector(".cont-1")
-   const lessopacity=document.querySelectorAll(".lessopacity");
    const black=document.querySelector(".black");
    let ismenu=false;
    hamburger.addEventListener("click",()=>{
